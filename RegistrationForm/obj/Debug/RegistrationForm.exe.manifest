@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RegistrationForm.exe" size="391128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RegistrationForm.exe" size="1203160">
       <assemblyIdentity name="RegistrationForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>26PI3By9MlwxV691eW2jrJXNCKagtWxSls/YAZV5VDI=</dsig:DigestValue>
+        <dsig:DigestValue>aFLQFSGHdE9cx1i11ALQp4E+6b3zLGmJVRCazBhu0ms=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -17,7 +17,7 @@ namespace RegistrationForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CarSimulationcs());
+            Application.Run(new Searchcs());
         }
     }
 }

@@ -41,16 +41,16 @@ namespace RegistrationForm
             MessageBox.Show("Data registered  Successfully");
 
 
-            PopulateDataGridView();
+            //PopulateDataGridView();
 
          
 
         }
 
-        private void PopulateDataGridView()
-        {
-            throw new NotImplementedException();
-        }
+        //private void PopulateDataGridView()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {

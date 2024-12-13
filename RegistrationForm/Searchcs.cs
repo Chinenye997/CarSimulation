@@ -48,11 +48,12 @@ namespace RegistrationForm
 
         private void btnSearchData_Click(object sender, EventArgs e)
         {
-            string searchText =txtSearch.Text.Trim();
+            string searchText = txtSearch.Text.Trim();/*txtSearch.Text.Trim();*/
 
             if (!string.IsNullOrEmpty(searchText))
             {
                 SearchData(searchText);
+                
             }
             else
             {
@@ -67,7 +68,7 @@ namespace RegistrationForm
         {
             // Create a SQL query to search for data based on your criteria
             //string query = "SELECT * FROM Register_dt WHERE Username LIKE @SearchText";
-            string query = "SELECT * FROM Register_dt WHERE Username LIKE '%" + searchText + "%'";
+            string query = "SELECT * FROM Register_dt WHERE Username LIkE @SearchText"; //+ searchText + "%'";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -75,16 +76,17 @@ namespace RegistrationForm
 
                 using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
                 {
-                    //adapter.SelectCommand.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
+                    adapter.SelectCommand.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
 
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
                     // Bind the DataTable to the DataGridView to display search results
                     dataGridView1.DataSource = dataTable;
+                   
                 }
 
-               
+                
             }
         }
 
@@ -105,6 +107,7 @@ namespace RegistrationForm
 
                     // Update the database with changes made in the DataTable
                     adapter.Update(dataTable);
+                    DisplayDataInDataGridView();
                 }
             }
 
@@ -157,6 +160,7 @@ namespace RegistrationForm
 
                     // Delete the row from the data source (e.g., database)
                     DeleteRecordFromDataSource(studentID); // Implement this method to delete from your data source
+                    DisplayDataInDataGridView();
                 }
             }
             else

@@ -174,6 +174,7 @@ namespace Car_Simulationcs
             this.Car3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Car3.TabIndex = 1;
             this.Car3.TabStop = false;
+            
             // 
             // timer1
             // 

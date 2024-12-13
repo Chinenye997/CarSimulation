@@ -20,3 +20,4 @@ C:\Users\USER\Desktop\Coding practice\RegistrationForm\RegistrationForm\obj\Debu
 C:\Users\USER\Desktop\Coding practice\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.exe.manifest
 C:\Users\USER\Desktop\Coding practice\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.application
 C:\Users\USER\Desktop\Coding practice\RegistrationForm\RegistrationForm\obj\Debug\Car_Simulationcs.CarSimulationcs.resources
+C:\Users\USER\Desktop\Coding practice\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.NewPrinter.resources

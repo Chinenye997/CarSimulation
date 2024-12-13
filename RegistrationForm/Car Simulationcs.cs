@@ -130,6 +130,6 @@ namespace Car_Simulationcs
             Car1.Location = new Point(3, 328);
         }
 
-       
+      
     }
 }
